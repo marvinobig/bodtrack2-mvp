@@ -1,0 +1,18 @@
+{
+    "name": "marvinobig/php-project-structure",
+    "type": "project",
+    "require": {
+        "catfan/medoo": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marvinobig\\PhpProjectStructure\\": "app/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marvinobig",
+            "email": "88102362+marvinobig@users.noreply.github.com"
+        }
+    ]
+}
