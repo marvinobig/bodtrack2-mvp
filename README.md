@@ -8,6 +8,13 @@ The first version of Bodtrack tracked your body weight. The second version will 
 - Add and track your weight, BMI, wilks score, and strength progress
 - Data visualization of weight, BMI, wilks score, and strength
 
+## Designs
+
+#### Dashboard design
+
+![Dashboard Design](./designs/dashboard-design.png)
+
+
 ## Languages/tools used:
 
 - JavaScript
