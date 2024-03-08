@@ -1,12 +1,12 @@
 {
-    "name": "marvinobig/php-project-structure",
+    "name": "marvinobig/bodtrack2-mvp",
     "type": "project",
     "require": {
         "catfan/medoo": "^2.1"
     },
     "autoload": {
         "psr-4": {
-            "Marvinobig\\PhpProjectStructure\\": "app/src/"
+            "Bodtrack\\": "app/src/"
         }
     },
     "authors": [
