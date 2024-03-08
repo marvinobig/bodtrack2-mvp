@@ -13,6 +13,7 @@ $current_date = date("l jS, F Y");
     <body>
         <h1>Example Project Directory</h1>
         <p>Current date: <?= $current_date ?></p>
+        <a href="dashboard.php">Head to dashboard</a>
     </body>
 
 </html>
