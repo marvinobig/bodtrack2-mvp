@@ -6,6 +6,8 @@ WORKDIR /var/www/html
 
 COPY . .
 
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
 COPY apache-config.conf /etc/apache2/sites-available/apache-config.conf
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
@@ -17,6 +19,8 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
 RUN apt-get update && \
     apt-get install -y libpng-dev && \
     docker-php-ext-install pdo pdo_mysql gd
+
+# RUN composer install --no-dev
 
 EXPOSE 80
 

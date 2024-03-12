@@ -1,0 +1,5 @@
+**/node_modules
+**/vendor
+.git
+npm-debug.log
+.env
