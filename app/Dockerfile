@@ -6,7 +6,7 @@ WORKDIR /var/www/html
 
 COPY . .
 
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+# COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 COPY apache-config.conf /etc/apache2/sites-available/apache-config.conf
 
