@@ -7,7 +7,7 @@ $current_date = date("l jS, F Y");
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Example Project Directory</title>
+        <title>Bodtrack 2</title>
     </head>
 
     <body>
