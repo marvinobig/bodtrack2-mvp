@@ -6,13 +6,26 @@ WORKDIR /var/www/html
 
 COPY . .
 
-# COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY apache-config.conf /etc/apache2/sites-available/apache-config.conf
 
 COPY --from=node:latest /usr/local/lib/node_modules /usr/local/lib/node_modules
 
 COPY --from=node:latest /usr/local/bin/node /usr/local/bin/node
+
+# System dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip
+
+# Clear cache
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 
@@ -26,9 +39,9 @@ RUN apt-get update && \
     apt-get install -y libpng-dev && \
     docker-php-ext-install pdo pdo_mysql gd
 
-# RUN composer install --no-dev
+# RUN composer install
 
-RUN npm install --omit=dev
+# RUN npm install --omit=dev
 
 EXPOSE 80
 
