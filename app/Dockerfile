@@ -39,9 +39,9 @@ RUN apt-get update && \
     apt-get install -y libpng-dev && \
     docker-php-ext-install pdo pdo_mysql gd
 
-# RUN composer install
+RUN composer install
 
-# RUN npm install --omit=dev
+RUN npm install --omit=dev
 
 EXPOSE 80
 
