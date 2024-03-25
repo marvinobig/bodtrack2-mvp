@@ -5,7 +5,7 @@ The first version of Bodtrack tracked your body weight. The second version will 
 ## Features
 
 - Create/log in to your personal account
-- Add and track your weight, BMI, wilks score, and strength progress
+- Add and track your weight, BMI and strength progress
 - Data visualization of weight, BMI, wilks score, and strength
 
 ## Designs
@@ -21,6 +21,7 @@ The first version of Bodtrack tracked your body weight. The second version will 
 - Chart JS
 - Webpack
 - PHP
+- Laravel
 - MySQL
 - Docker
 
