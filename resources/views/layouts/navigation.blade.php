@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary px-2 d-flex justify-content-between">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark px-2 d-flex justify-content-between">
     <section class="navbar-brand">
         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
             {{ __('Bodtrack') }}
