@@ -21,6 +21,7 @@ The first version of Bodtrack tracked your body weight. The second version will 
 - Chart JS
 - Webpack
 - PHP
+- Laravel
 - MySQL
 - Docker
 
