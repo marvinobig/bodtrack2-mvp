@@ -1,24 +1,13 @@
 {
-  "name": "bodtrack",
-  "version": "1.0.0",
-  "description": "Template repo with an example of a php project structure to follow",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:assets": "npx mix"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "laravel-mix": "^6.0.49",
-    "resolve-url-loader": "^5.0.0",
-    "sass": "^1.71.1",
-    "sass-loader": "^12.6.0"
-  },
-  "dependencies": {
-    "chart.js": "^4.4.2"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0.0",
+        "vite": "^5.0.0"
+    }
 }
